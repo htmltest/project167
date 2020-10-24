@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {outline:none; box-sizing:border-box}
+
+html {min-width:480px}
+
+body {min-width:480px; margin:0; padding:0; background:#000; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+.fonts-loaded body {font-family:Gilroy, sans-serif}
+
+::-ms-clear {display:none}
+
+.wrapper {width:100%; min-width:480px; position:relative; overflow:hidden}
+
+.container {max-width:1140px; margin:0 auto; position:relative}
+.container::after {content:""; display:block; clear:both}
+
+@media screen and (max-width:1139px) {
+    .container {padding:0 15px}
+}
+
+.header {position:absolute; left:0; top:0; right:0; padding:39px 0 0 68px; z-index:10}
+.logo {float:left; width:126px; height:38px; background:url(../images/logo.svg) no-repeat; background-size:100%}
+
+@media screen and (max-width:1139px) {
+    .header {padding:40px 0 0 40px}
+}
+
+.buy-inner {display:inline-block; vertical-align:top; text-align:left}
+.buy-price {line-height:64px}
+.buy-price strong {font-size:32px; font-weight:bold; color:#f1c835}
+.buy-price strong span {font-size:64px}
+.buy-price em {font-style:normal; font-size:28px; color:#b9b8b8; text-decoration:line-through; margin:0 0 0 18px}
+.buy-link {margin:-14px 0 0 0}
+
+@media screen and (max-width:1139px) {
+    .buy-inner {display:block; text-align:center}
+    .buy-price {line-height:42px}
+    .buy-price strong {font-size:42px}
+    .buy-price strong span {font-size:42px}
+    .buy-price em {font-size:20px; margin:0 0 0 14px}
+    .buy-link {margin:-7px 0 0 0}
+}
+
+.btn {display:inline-block; position:relative; vertical-align:top; height:55px; padding:0 20px; color:#110e27; text-decoration:none; border-radius:8px; font-weight:bold; font-size:34px; line-height:55px; background:#f1c835; transition:all 0.2s}
+a.btn:hover {opacity:0.8}
+.btn span {font-size:32px; font-weight:600; display:inline-block; vertical-align:top; position:relative; margin:0 57px 0 0}
+.btn span::after {content:""; display:block; position:absolute; right:-32px; top:8px; width:2px; height:38px; background:#3d2d2b}
+
+@media screen and (max-width:1139px) {
+    .btn {display:block; padding:0; text-align:center; font-size:32px}
+    .btn span {margin:0 43px 0 0}
+    .btn span::after {content:""; display:block; position:absolute; right:-20px; top:12px; width:1px; height:28px; background:#3d2d2b}
+}
+
+.welcome {background:#0d0e26}
+.welcome-slider {position:relative; height:791px; white-space:nowrap; font-size:0; line-height:0; letter-spacing:-1px}
+.welcome-item {display:inline-block; width:100%; vertical-align:top; height:791px; position:relative; white-space:normal; letter-spacing:0}
+.welcome-bg {position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center}
+.welcome-bg-mobile {display:none}
+
+@media screen and (max-width:1139px) {
+    .welcome-slider {height:1080px}
+    .welcome-item {height:1080px}
+    .welcome-bg {display:none}
+    .welcome-bg-mobile {display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center bottom; background-size:100% auto}
+}
+
+.welcome-7-container {position:relative; padding:211px 0 0 0; color:#fff}
+.welcome-7-logo {width:305px; height:58px; background:url(../images/welcome-7-logo.svg) no-repeat; background-size:100%}
+.welcome-7-text-1 {font-weight:600; font-size:42px; line-height:53px; margin:24px 0 0 0}
+.welcome-7-text-2 {font-weight:500; font-size:22px; line-height:31px; padding:14px 0 0 0}
+.welcome-7-buy {padding:52px 0 0 0}
+.welcome-7-buy .btn {color:#fff; background:#c43333}
+.welcome-7-buy .btn span::after {background:#fff}
+
+@media screen and (max-width:1139px) {
+    .welcome-7-container {padding:126px 0 0 0; text-align:center; max-width:450px; margin:0 auto}
+    .welcome-7-logo {margin:0 auto}
+    .welcome-7-text-1 {font-size:36px; line-height:43px; margin:33px 0 0 0}
+    .welcome-7-text-2 {font-size:20px; line-height:24px}
+    .welcome-7-buy {padding:54px 0 0 0}
+}
+
+.welcome-7pro-container {position:relative; max-width:740px; text-align:center; padding:218px 0 0 0; color:#fff}
+.welcome-7pro-logo {width:344px; height:53px; margin:0 auto; background:url(../images/welcome-7pro-logo.svg) no-repeat; background-size:100%}
+.welcome-7pro-text-1 {font-weight:600; font-size:42px; line-height:48px; margin:19px 0 0 0}
+.welcome-7pro-text-1::after {content:""; display:inline-block; vertical-align:middle; width:32px; height:23px; background:url(../images/welcome-7pro-text-1.svg) no-repeat; background-size:100%; margin:0 0 0 11px}
+.welcome-7pro-text-2 {font-weight:600; font-size:42px; line-height:48px}
+.welcome-7pro-text-3 {font-weight:500; font-size:22px; line-height:31px; padding:16px 0 0 0}
+.welcome-7pro-buy {padding:38px 0 0 0}
+.welcome-7pro-notice {font-weight:300; font-size:12px; line-height:15px; color:#c1c0c0; padding:93px 0 0 0}
+
+@media screen and (max-width:1139px) {
+    .welcome-7pro-container {max-width:450px; padding:142px 0 0 0}
+    .welcome-7pro-text-1 {font-size:36px; line-height:43px; margin:35px 0 0 0}
+    .welcome-7pro-text-1::after {width:30px; height:18px}
+    .welcome-7pro-text-2 {font-size:36px; line-height:43px}
+    .welcome-7pro-text-3 {font-size:20px; line-height:24px; padding:18px 0 0 0; max-width:340px; margin:0 auto}
+    .welcome-7pro-notice {line-height:14px; padding:18px 0 0 0}
+    .welcome-7pro-notice br {display:none}
+}
+
+.why-content {float:right; width:582px}
+.why-title {font-weight:bold; font-size:42px; line-height:47px}
+.why-list {margin:35px -10px 0 -10px; font-weight:600; font-size:23px; line-height:27px}
+.why-list-inner {display:table; width:100%; border-collapse:separate; border-spacing:10px 10px}
+.why-list-row {display:table-row}
+.why-list-item {display:table-cell; vertical-align:middle; width:50%; text-align:center; position:relative; border-width:1px; border-style:solid; border-radius:5px; padding:7px 0 9px 0; white-space:nowrap}
+
+@media screen and (max-width:1139px) {
+    .why-content {float:none; width:386px; margin:0 auto}
+    .why-title {text-align:center; font-size:36px; line-height:43px}
+    .why-list {display:none; margin:11px -10px 0 -10px}
+}
+
+.realme7pro {background:#030a0d; padding:97px 0 0 0}
+.realme7pro-why {margin:0 -80px; height:580px; background:#fff url(../images/realme7pro-why.jpg) no-repeat; border-radius:10px; padding:96px 80px 0 80px}
+.realme7pro-why::after {content:""; display:block; clear:both}
+.realme7pro-why .why-title {color:#000}
+.realme7pro-why .why-list {color:#000}
+.realme7pro-why .why-list-item {border-color:#18122f}
+.realme7pro-charge {margin:0 -26px 0 0; height:518px; background:url(../images/realme7pro-charge.png) no-repeat right top; padding:74px 0 0 0}
+.realme7pro-charge-title {font-weight:bold; color:#fff; font-size:42px; line-height:56px}
+.realme7pro-charge-props {margin:42px 0 0 0}
+.realme7pro-charge-props::after {content:""; display:block; clear:both}
+.realme7pro-charge-prop {float:left; color:#f1c835; position:relative}
+.realme7pro-charge-prop-1 {padding:0 0 0 79px}
+.realme7pro-charge-prop-1::before {content:""; display:block; position:absolute; left:16px; top:-2px; width:37px; height:61px; background:url(../images/icon-1.png) no-repeat}
+.realme7pro-charge-prop-2 {padding:0 0 0 71px; margin:0 0 0 74px}
+.realme7pro-charge-prop-2::before {content:""; display:block; position:absolute; left:0; top:-2px; width:55px; height:70px; background:url(../images/icon-2.png) no-repeat}
+.realme7pro-charge-prop-3 {padding:0 0 0 75px; clear:left; margin:66px 0 0 0}
+.realme7pro-charge-prop-3::before {content:""; display:block; position:absolute; left:19px; top:-2px; width:29px; height:67px; background:url(../images/icon-3.png) no-repeat}
+.realme7pro-charge-prop-title {font-size:32px; line-height:32px; font-weight:600}
+.realme7pro-charge-prop-text {font-size:22px; line-height:22px; font-weight:500; padding:5px 0 0 0}
+.realme7pro-camera {padding:22px 0 0 0; position:relative; z-index:1}
+.realme7pro-camera::after {content:""; display:block; clear:both}
+.realme7pro-camera-photo {float:left; width:360px; height:441px; background:url(../images/realme7pro-camera.png) no-repeat}
+.realme7pro-camera-content {float:right; padding:114px 0 0 0}
+.realme7pro-camera-title {font-weight:bold; font-size:42px; line-height:56px; color:#fff}
+.realme7pro-camera-props {display:table; color:#f1c835}
+.realme7pro-camera-props-row {display:table-row}
+.realme7pro-camera-prop {display:table-cell; vertical-align:top; padding:22px 0 0 66px}
+.realme7pro-camera-prop:first-child {padding-left:0}
+.realme7pro-camera-prop-title {font-size:32px; line-height:32px; font-weight:600}
+.realme7pro-camera-prop-text {font-size:22px; line-height:22px; font-weight:500; padding:5px 0 0 0}
+.realme7pro-screen {height:848px; position:relative; margin:-43px -167px 0 -167px; padding:175px 0 0 0; background:url(../images/realme7pro-screen.jpg) no-repeat center; text-align:center}
+.realme7pro-screen-title {font-weight:bold; font-size:45px; line-height:53px; color:#fff}
+.realme7pro-screen-text {font-weight:500; font-size:24px; line-height:28px; color:#f1c835; padding:448px 0 0 0}
+.realme7pro-screen-notice {font-size:12px; line-height:18px; font-weight:300; color:#fdfdfd; padding:21px 0 0 0}
+
+@media screen and (max-width:1139px) {
+    .realme7pro {padding:53px 0 0 0}
+    .realme7pro-why {margin:0 auto; width:450px; height:982px; background:#fff url(../images/realme7pro-why-mobile.jpg) no-repeat; padding:46px 32px 0 32px}
+    .realme7pro-buy {padding:34px 0 0 0}
+    .realme7pro-charge {margin:0 auto; width:450px; height:auto; background:url(../images/realme7pro-charge-mobile.jpg) no-repeat center top; padding:57px 0 0 0; text-align:center}
+    .realme7pro-charge-title {font-size:36px; line-height:43px}
+    .realme7pro-charge-props {margin:31px 0 0 0}
+    .realme7pro-charge-prop {float:none}
+    .realme7pro-charge-prop-1 {padding:0}
+    .realme7pro-charge-prop-1::before {position:relative; left:auto; top:auto; margin:0 auto 11px auto}
+    .realme7pro-charge-prop-2 {padding:0; margin:36px 0 0 0}
+    .realme7pro-charge-prop-2::before {position:relative; left:auto; top:auto; margin:0 auto 3px auto}
+    .realme7pro-charge-prop-3 {padding:0; clear:none; margin:37px 0 0 0}
+    .realme7pro-charge-prop-3::before {position:relative; left:auto; top:auto; margin:0 auto 6px auto}
+    .realme7pro-camera {padding:76px 0 0 0; text-align:center}
+    .realme7pro-camera-photo {float:none; margin:0 auto}
+    .realme7pro-camera-content {float:none; padding:37px 0 0 0}
+    .realme7pro-camera-title {font-size:36px; line-height:43px}
+    .realme7pro-camera-prop {padding-left:0}
+    .realme7pro-screen {height:590px; margin:-29px -15px 0 -15px; background:url(../images/realme7pro-screen-mobile.jpg) no-repeat center; padding:101px 0 0 0}
+    .realme7pro-screen-title {font-size:36px; line-height:43px; max-width:270px; margin:0 auto}
+    .realme7pro-screen-text {font-size:20px; line-height:24px; padding:228px 0 0 0}
+    .realme7pro-screen-notice {font-size:14px; line-height:17px; padding:10px 0 0 0}
+}
+
+.realme7 {padding:86px 0 73px 0}
+.realme7-container {background:#000 url(../images/realme7-bottom.jpg) no-repeat 1px bottom; margin:0 -80px; padding:0 0 626px 0}
+.realme7-why {height:580px; background:#000 url(../images/realme7-why.jpg) no-repeat; padding:107px 80px 0 80px}
+.realme7-why::after {content:""; display:block; clear:both}
+.realme7-why .why-title {color:#fefefe}
+.realme7-why .why-list {color:#fff}
+.realme7-why .why-list-item {border-color:#fff}
+.realme7-cpu {margin:0 1px; height:628px; background:url(../images/realme7-cpu.jpg) no-repeat center; padding:485px 0 0 175px}
+.realme7-cpu-title {font-weight:600; font-size:42px; line-height:53px; color:#fff}
+.realme7-cpu-prop {font-size:0; line-height:0; color:#fff; padding:25px 0 0 0}
+.realme7-cpu-prop strong {display:inline-block; vertical-align:middle; font-weight:600; font-size:36px; line-height:39px}
+.realme7-cpu-prop em {display:inline-block; vertical-align:middle; width:687px; height:14px; background:url(../images/realme7-cpu-prop.png) no-repeat; margin:0 30px 0 20px}
+.realme7-cpu-prop span {display:inline-block; vertical-align:middle; font-size:26px; line-height:26px; height:26px}
+.realme7-charge {height:616px; background:url(../images/realme7-charge.jpg) no-repeat; padding:101px 0 0 80px}
+.realme7-charge-title {font-weight:600; color:#fff; font-size:42px; line-height:53px}
+.realme7-charge-props {margin:52px 0 0 0}
+.realme7-charge-props::after {content:""; display:block; clear:both}
+.realme7-charge-prop {float:left; color:#f1c835; position:relative}
+.realme7-charge-prop-1 {padding:0 0 0 61px}
+.realme7-charge-prop-1::before {content:""; display:block; position:absolute; left:3px; top:-2px; width:37px; height:61px; background:url(../images/icon-1.png) no-repeat}
+.realme7-charge-prop-2 {padding:0 0 0 72px; margin:0 0 0 101px}
+.realme7-charge-prop-2::before {content:""; display:block; position:absolute; left:0; top:4px; width:53px; height:53px; background:url(../images/icon-4.png) no-repeat}
+.realme7-charge-prop-title {font-size:32px; line-height:32px; font-weight:600}
+.realme7-charge-prop-text {font-size:22px; line-height:22px; font-weight:500; padding:5px 0 0 0}
+
+@media screen and (max-width:1139px) {
+    .realme7 {padding:50px 0 29px 0}
+    .realme7-container {max-width:450px; background:#000 url(../images/realme7-bottom-mobile.jpg) no-repeat center bottom; margin:0 auto; padding:0 0 313px 0}
+    .realme7-why {height:971px; background:#000 url(../images/realme7-why-mobile.jpg) no-repeat; padding:46px 32px 0 32px}
+    .realme7-cpu {height:501px; background:url(../images/realme7-cpu-mobile.jpg) no-repeat center; padding:325px 15px 0 15px; text-align:center}
+    .realme7-cpu-title {font-size:34px; line-height:43px}
+    .realme7-cpu-prop {padding:32px 0 0 0}
+    .realme7-cpu-prop strong {font-size:24px; line-height:28px}
+    .realme7-cpu-prop em {width:205px; background:url(../images/realme7-cpu-prop-mobile.png) no-repeat; margin:0 12px}
+    .realme7-cpu-prop span {font-size:18px; line-height:22px; height:22px}
+    .realme7-charge {padding:0; height:524px; background:url(../images/realme7-charge-mobile.jpg) no-repeat center 95px}
+    .realme7-charge-title {font-size:34px; line-height:43px; text-align:center}
+    .realme7-charge-title br {display:none}
+    .realme7-charge-props {margin:67px 0 0 27px}
+    .realme7-charge-prop {float:none}
+    .realme7-charge-prop-1 {padding:0 0 0 66px}
+    .realme7-charge-prop-1::before {left:6px}
+    .realme7-charge-prop-2 {padding:0 0 0 66px; margin:21px 0 0 0}
+    .realme7-charge-prop-2::before {left:0}
+}
