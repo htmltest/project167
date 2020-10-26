@@ -70,8 +70,6 @@ a.btn:hover {opacity:0.8}
 .welcome-7-text-1 {font-weight:600; font-size:42px; line-height:53px; margin:24px 0 0 0}
 .welcome-7-text-2 {font-weight:500; font-size:22px; line-height:31px; padding:14px 0 0 0}
 .welcome-7-buy {padding:30px 0 0 0}
-.welcome-7-buy .btn {color:#fff; background:#c43333}
-.welcome-7-buy .btn span::after {background:#fff}
 .welcome-7-variants {padding:54px 0 0 0}
 .welcome-7-variant {display:inline-block; vertical-align:top; height:56px; border:1px solid #fff; border-radius:10px; width:228px; text-align:center; color:#fff; font-weight:600; font-size:32px; line-height:54px}
 
@@ -123,7 +121,6 @@ a.btn:hover {opacity:0.8}
 .realme7pro-why .why-title {color:#000}
 .realme7pro-why .why-list {color:#000}
 .realme7pro-why .why-list-item {border-color:#18122f}
-.realme7pro-buy {display:none; padding:50px 0 0 0}
 .realme7pro-charge {margin:0 -26px 0 0; height:518px; background:url(../images/realme7pro-charge.png) no-repeat right top; padding:74px 0 0 0}
 .realme7pro-charge-title {font-weight:bold; color:#fff; font-size:42px; line-height:56px}
 .realme7pro-charge-props {margin:42px 0 0 0}
@@ -155,9 +152,7 @@ a.btn:hover {opacity:0.8}
 
 @media screen and (max-width:1139px) {
     .realme7pro {padding:53px 0 0 0}
-    .realme7pro-why {margin:0 auto; width:450px; height:982px; background:#fff url(../images/realme7pro-why-mobile.jpg) no-repeat; padding:46px 32px 0 32px}
-    .realme7pro-buy {display:block}
-    .realme7pro-buy .buy-price strong {color:#110e27}
+    .realme7pro-why {margin:0 auto; width:450px; height:832px; background:#fff url(../images/realme7pro-why-mobile.jpg) no-repeat left bottom; padding:46px 32px 0 32px}
     .realme7pro-charge {margin:0 auto; width:450px; height:auto; background:url(../images/realme7pro-charge-mobile.jpg) no-repeat center top; padding:57px 0 0 0; text-align:center}
     .realme7pro-charge-title {font-size:36px; line-height:43px}
     .realme7pro-charge-props {margin:31px 0 0 0}
@@ -186,9 +181,6 @@ a.btn:hover {opacity:0.8}
 .realme7-why .why-title {color:#fefefe}
 .realme7-why .why-list {color:#fff}
 .realme7-why .why-list-item {border-color:#fff}
-.realme7-variants {display:none}
-.realme7-variant {display:inline-block; vertical-align:top; height:56px; border:1px solid #fff; border-radius:10px; width:228px; text-align:center; color:#fff; font-weight:600; font-size:32px; line-height:54px}
-.realme7-buy {display:none}
 .realme7-cpu {margin:0 1px; height:628px; background:url(../images/realme7-cpu.jpg) no-repeat center; padding:485px 0 0 175px}
 .realme7-cpu-title {font-weight:600; font-size:42px; line-height:53px; color:#fff}
 .realme7-cpu-prop {font-size:0; line-height:0; color:#fff; padding:25px 0 0 0}
@@ -210,9 +202,7 @@ a.btn:hover {opacity:0.8}
 @media screen and (max-width:1139px) {
     .realme7 {padding:50px 0 29px 0}
     .realme7-container {max-width:450px; background:#000 url(../images/realme7-bottom-mobile.jpg) no-repeat center bottom; margin:0 auto; padding:0 0 313px 0}
-    .realme7-why {height:971px; background:#000 url(../images/realme7-why-mobile.jpg) no-repeat; padding:46px 32px 0 32px}
-    .realme7-variants {display:block; padding:23px 0 0 0; text-align:center}
-    .realme7-buy {display:block; padding:20px 0 0 0}
+    .realme7-why {height:821px; background:#000 url(../images/realme7-why-mobile.jpg) no-repeat center bottom; padding:46px 32px 0 32px}
     .realme7-cpu {height:501px; background:url(../images/realme7-cpu-mobile.jpg) no-repeat center; padding:325px 15px 0 15px; text-align:center}
     .realme7-cpu-title {font-size:34px; line-height:43px}
     .realme7-cpu-prop {padding:32px 0 0 0}
